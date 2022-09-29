@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "Remover",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "This is Herald banner remover.",
+        "description": "Show the hidden news."
+    }
+}

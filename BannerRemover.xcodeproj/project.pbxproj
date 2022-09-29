@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB96E36628D872640095835A /* sample.js in Resources */ = {isa = PBXBuildFile; fileRef = DB96E36528D872640095835A /* sample.js */; };
+		DBB85D9F28D9835B002A594D /* default.js in Resources */ = {isa = PBXBuildFile; fileRef = DBB85D9E28D9835B002A594D /* default.js */; };
+		DBC0BDB528D7DD69007C0E46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC0BDB428D7DD69007C0E46 /* AppDelegate.swift */; };
+		DBC0BDB728D7DD69007C0E46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC0BDB628D7DD69007C0E46 /* ContentView.swift */; };
+		DBC0BDB928D7DD6B007C0E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDB828D7DD6B007C0E46 /* Assets.xcassets */; };
+		DBC0BDBC28D7DD6B007C0E46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDBB28D7DD6B007C0E46 /* Preview Assets.xcassets */; };
+		DBC0BDBF28D7DD6B007C0E46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDBD28D7DD6B007C0E46 /* Main.storyboard */; };
+		DBC0BDCF28D7DE09007C0E46 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC0BDCE28D7DE09007C0E46 /* Cocoa.framework */; };
+		DBC0BDD228D7DE09007C0E46 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC0BDD128D7DE09007C0E46 /* SafariWebExtensionHandler.swift */; };
+		DBC0BDD528D7DE09007C0E46 /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDD428D7DE09007C0E46 /* _locales */; };
+		DBC0BDD728D7DE09007C0E46 /* images in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDD628D7DE09007C0E46 /* images */; };
+		DBC0BDD928D7DE09007C0E46 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDD828D7DE09007C0E46 /* manifest.json */; };
+		DBC0BDDB28D7DE09007C0E46 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDDA28D7DE09007C0E46 /* background.js */; };
+		DBC0BDDD28D7DE09007C0E46 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDDC28D7DE09007C0E46 /* content.js */; };
+		DBC0BDDF28D7DE09007C0E46 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDDE28D7DE09007C0E46 /* popup.html */; };
+		DBC0BDE128D7DE09007C0E46 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDE028D7DE09007C0E46 /* popup.css */; };
+		DBC0BDE328D7DE09007C0E46 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDE228D7DE09007C0E46 /* popup.js */; };
+		DBC0BDE828D7DE09007C0E46 /* Remover.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DBC0BDCC28D7DE09007C0E46 /* Remover.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DBC0BDF628D7E275007C0E46 /* HeraldBanner.js in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDF528D7E275007C0E46 /* HeraldBanner.js */; };
+		DBC0BDFA28D7E8A0007C0E46 /* msg.js in Resources */ = {isa = PBXBuildFile; fileRef = DBC0BDF928D7E8A0007C0E46 /* msg.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBC0BDE628D7DE09007C0E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBC0BDA928D7DD69007C0E46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBC0BDCB28D7DE09007C0E46;
+			remoteInfo = Remover;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DBC0BDEC28D7DE09007C0E46 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DBC0BDE828D7DE09007C0E46 /* Remover.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DB96E36528D872640095835A /* sample.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = sample.js; sourceTree = "<group>"; };
+		DBB85D9E28D9835B002A594D /* default.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = default.js; sourceTree = "<group>"; };
+		DBC0BDB128D7DD69007C0E46 /* BannerRemover.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BannerRemover.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC0BDB428D7DD69007C0E46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DBC0BDB628D7DD69007C0E46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DBC0BDB828D7DD6B007C0E46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBC0BDBB28D7DD6B007C0E46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DBC0BDBE28D7DD6B007C0E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBC0BDC028D7DD6B007C0E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC0BDC128D7DD6B007C0E46 /* BannerRemover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BannerRemover.entitlements; sourceTree = "<group>"; };
+		DBC0BDCC28D7DE09007C0E46 /* Remover.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Remover.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC0BDCE28D7DE09007C0E46 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DBC0BDD128D7DE09007C0E46 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		DBC0BDD428D7DE09007C0E46 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		DBC0BDD628D7DE09007C0E46 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		DBC0BDD828D7DE09007C0E46 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		DBC0BDDA28D7DE09007C0E46 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		DBC0BDDC28D7DE09007C0E46 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		DBC0BDDE28D7DE09007C0E46 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		DBC0BDE028D7DE09007C0E46 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		DBC0BDE228D7DE09007C0E46 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		DBC0BDE428D7DE09007C0E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC0BDE528D7DE09007C0E46 /* Remover.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Remover.entitlements; sourceTree = "<group>"; };
+		DBC0BDF528D7E275007C0E46 /* HeraldBanner.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = HeraldBanner.js; sourceTree = "<group>"; };
+		DBC0BDF928D7E8A0007C0E46 /* msg.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = msg.js; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBC0BDAE28D7DD69007C0E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC0BDC928D7DE09007C0E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC0BDCF28D7DE09007C0E46 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DBC0BDA828D7DD69007C0E46 = {
+			isa = PBXGroup;
+			children = (
+				DBC0BDB328D7DD69007C0E46 /* BannerRemover */,
+				DBC0BDD028D7DE09007C0E46 /* Remover */,
+				DBC0BDCD28D7DE09007C0E46 /* Frameworks */,
+				DBC0BDB228D7DD69007C0E46 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DBC0BDB228D7DD69007C0E46 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0BDB128D7DD69007C0E46 /* BannerRemover.app */,
+				DBC0BDCC28D7DE09007C0E46 /* Remover.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBC0BDB328D7DD69007C0E46 /* BannerRemover */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0BDB428D7DD69007C0E46 /* AppDelegate.swift */,
+				DBC0BDB628D7DD69007C0E46 /* ContentView.swift */,
+				DBC0BDB828D7DD6B007C0E46 /* Assets.xcassets */,
+				DBC0BDBD28D7DD6B007C0E46 /* Main.storyboard */,
+				DBC0BDC028D7DD6B007C0E46 /* Info.plist */,
+				DBC0BDC128D7DD6B007C0E46 /* BannerRemover.entitlements */,
+				DBC0BDBA28D7DD6B007C0E46 /* Preview Content */,
+			);
+			path = BannerRemover;
+			sourceTree = "<group>";
+		};
+		DBC0BDBA28D7DD6B007C0E46 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0BDBB28D7DD6B007C0E46 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DBC0BDCD28D7DE09007C0E46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0BDCE28D7DE09007C0E46 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBC0BDD028D7DE09007C0E46 /* Remover */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0BDD128D7DE09007C0E46 /* SafariWebExtensionHandler.swift */,
+				DBC0BDE428D7DE09007C0E46 /* Info.plist */,
+				DBC0BDE528D7DE09007C0E46 /* Remover.entitlements */,
+				DBC0BDD328D7DE09007C0E46 /* Resources */,
+			);
+			path = Remover;
+			sourceTree = "<group>";
+		};
+		DBC0BDD328D7DE09007C0E46 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0BDD428D7DE09007C0E46 /* _locales */,
+				DBC0BDD628D7DE09007C0E46 /* images */,
+				DBC0BDD828D7DE09007C0E46 /* manifest.json */,
+				DBC0BDDA28D7DE09007C0E46 /* background.js */,
+				DBC0BDF528D7E275007C0E46 /* HeraldBanner.js */,
+				DBC0BDDC28D7DE09007C0E46 /* content.js */,
+				DB96E36528D872640095835A /* sample.js */,
+				DBB85D9E28D9835B002A594D /* default.js */,
+				DBC0BDDE28D7DE09007C0E46 /* popup.html */,
+				DBC0BDE028D7DE09007C0E46 /* popup.css */,
+				DBC0BDE228D7DE09007C0E46 /* popup.js */,
+				DBC0BDF928D7E8A0007C0E46 /* msg.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBC0BDB028D7DD69007C0E46 /* BannerRemover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC0BDC428D7DD6B007C0E46 /* Build configuration list for PBXNativeTarget "BannerRemover" */;
+			buildPhases = (
+				DBC0BDAD28D7DD69007C0E46 /* Sources */,
+				DBC0BDAE28D7DD69007C0E46 /* Frameworks */,
+				DBC0BDAF28D7DD69007C0E46 /* Resources */,
+				DBC0BDEC28D7DE09007C0E46 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DBC0BDE728D7DE09007C0E46 /* PBXTargetDependency */,
+			);
+			name = BannerRemover;
+			productName = BannerRemover;
+			productReference = DBC0BDB128D7DD69007C0E46 /* BannerRemover.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DBC0BDCB28D7DE09007C0E46 /* Remover */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC0BDE928D7DE09007C0E46 /* Build configuration list for PBXNativeTarget "Remover" */;
+			buildPhases = (
+				DBC0BDC828D7DE09007C0E46 /* Sources */,
+				DBC0BDC928D7DE09007C0E46 /* Frameworks */,
+				DBC0BDCA28D7DE09007C0E46 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Remover;
+			productName = Remover;
+			productReference = DBC0BDCC28D7DE09007C0E46 /* Remover.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBC0BDA928D7DD69007C0E46 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					DBC0BDB028D7DD69007C0E46 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					DBC0BDCB28D7DE09007C0E46 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = DBC0BDAC28D7DD69007C0E46 /* Build configuration list for PBXProject "BannerRemover" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DBC0BDA828D7DD69007C0E46;
+			productRefGroup = DBC0BDB228D7DD69007C0E46 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBC0BDB028D7DD69007C0E46 /* BannerRemover */,
+				DBC0BDCB28D7DE09007C0E46 /* Remover */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBC0BDAF28D7DD69007C0E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC0BDBF28D7DD6B007C0E46 /* Main.storyboard in Resources */,
+				DBC0BDBC28D7DD6B007C0E46 /* Preview Assets.xcassets in Resources */,
+				DBC0BDB928D7DD6B007C0E46 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC0BDCA28D7DE09007C0E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC0BDFA28D7E8A0007C0E46 /* msg.js in Resources */,
+				DBC0BDDB28D7DE09007C0E46 /* background.js in Resources */,
+				DBC0BDE128D7DE09007C0E46 /* popup.css in Resources */,
+				DBC0BDDF28D7DE09007C0E46 /* popup.html in Resources */,
+				DBC0BDD728D7DE09007C0E46 /* images in Resources */,
+				DBC0BDD928D7DE09007C0E46 /* manifest.json in Resources */,
+				DBB85D9F28D9835B002A594D /* default.js in Resources */,
+				DBC0BDD528D7DE09007C0E46 /* _locales in Resources */,
+				DB96E36628D872640095835A /* sample.js in Resources */,
+				DBC0BDDD28D7DE09007C0E46 /* content.js in Resources */,
+				DBC0BDE328D7DE09007C0E46 /* popup.js in Resources */,
+				DBC0BDF628D7E275007C0E46 /* HeraldBanner.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBC0BDAD28D7DD69007C0E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC0BDB728D7DD69007C0E46 /* ContentView.swift in Sources */,
+				DBC0BDB528D7DD69007C0E46 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC0BDC828D7DE09007C0E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC0BDD228D7DE09007C0E46 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBC0BDE728D7DE09007C0E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBC0BDCB28D7DE09007C0E46 /* Remover */;
+			targetProxy = DBC0BDE628D7DE09007C0E46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DBC0BDBD28D7DD6B007C0E46 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBC0BDBE28D7DD6B007C0E46 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBC0BDC228D7DD6B007C0E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DBC0BDC328D7DD6B007C0E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		DBC0BDC528D7DD6B007C0E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BannerRemover/BannerRemover.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"BannerRemover/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BannerRemover/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = seclib.BannerRemover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DBC0BDC628D7DD6B007C0E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BannerRemover/BannerRemover.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"BannerRemover/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BannerRemover/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = seclib.BannerRemover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		DBC0BDEA28D7DE09007C0E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Remover/Remover.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Remover/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = seclib.BannerRemover.Remover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		DBC0BDEB28D7DE09007C0E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Remover/Remover.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Remover/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = seclib.BannerRemover.Remover;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBC0BDAC28D7DD69007C0E46 /* Build configuration list for PBXProject "BannerRemover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC0BDC228D7DD6B007C0E46 /* Debug */,
+				DBC0BDC328D7DD6B007C0E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBC0BDC428D7DD6B007C0E46 /* Build configuration list for PBXNativeTarget "BannerRemover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC0BDC528D7DD6B007C0E46 /* Debug */,
+				DBC0BDC628D7DD6B007C0E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBC0BDE928D7DE09007C0E46 /* Build configuration list for PBXNativeTarget "Remover" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC0BDEA28D7DE09007C0E46 /* Debug */,
+				DBC0BDEB28D7DE09007C0E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DBC0BDA928D7DD69007C0E46 /* Project object */;
+}
