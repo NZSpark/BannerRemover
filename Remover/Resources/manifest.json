@@ -24,7 +24,7 @@
     },
     {
         "js": [ "HeraldBanner.js" ],
-        "matches": [ "*://www.nzherald.co.nz/*" ]
+        "matches": [ "*://*/*" ]
     }],
 
     "action": {

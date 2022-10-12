@@ -22,6 +22,33 @@ function removeAD(){
         allBlocks[i].remove()
     }
     
+    //interstitial
+    allBlocks = document.getElementsByClassName("interstitial");
+    for(var i = allBlocks.length-1; i >= 0 ; i--){
+        allBlocks[i].remove()
+    }
+    
+    //commenting__paywall
+    allBlocks = document.getElementsByClassName("commenting__paywall");
+    if(allBlocks != null)
+        for(var i = allBlocks.length-1; i >= 0 ; i--){
+            allBlocks[i].remove()
+        };
+    
+    //ad-zone
+    allBlocks = document.getElementsByClassName("ad-zone");
+    if(allBlocks != null)
+        for(var i = allBlocks.length-1; i >= 0 ; i--){
+            allBlocks[i].remove()
+        };
+    
+    //adsninja-ad-zone
+    allBlocks = document.getElementsByClassName("adsninja-ad-zone");
+    if(allBlocks != null)
+        for(var i = allBlocks.length-1; i >= 0 ; i--){
+            allBlocks[i].remove()
+        };
+    
     //bottom recommended icons.
     recommendedTags = document.getElementsByClassName("recommended-articles");
     if(recommendedTags.length > 0) recommendedTags[0].remove();
@@ -29,6 +56,8 @@ function removeAD(){
     //premium-toaster
     adFooter = document.getElementById("premium-toaster");
     if(adFooter != null) adFooter.remove();
+    
+
 }
 
 
@@ -57,7 +86,6 @@ function removeBanner(){
     for (let i = 1; i < interval_id; i++) {
       window.clearInterval(i);
     }
-    
 
     bannerTags = document.getElementsByClassName("article-offer");
     
@@ -137,6 +165,9 @@ function removeBanner(){
 //            }
         }
     }
+    
+
+    
     console.log("Advertise has been removed!");
     removeAD();
 }
