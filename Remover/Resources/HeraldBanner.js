@@ -1,8 +1,12 @@
 
 function removeAD(){
     //top advertise panel.
-    adPanel = document.getElementById("pd_div");
+    var adPanel = document.getElementById("pd_div");
     if(adPanel != null) adPanel.remove();
+    
+    //premium-toaster
+    var adFooter = document.getElementById("premium-toaster");
+    if(adFooter != null) adFooter.remove();
     
     //middle advertise things with 'ad' classname.
     var allBlocks = document.getElementsByClassName("ad");
@@ -49,15 +53,16 @@ function removeAD(){
             allBlocks[i].remove()
         };
     
+    //frameElement
+    allBlocks = document.getElementsByClassName("frameElement");
+    for(var i = allBlocks.length-1; i >= 0 ; i--){
+        allBlocks[i].remove()
+    }
+    
     //bottom recommended icons.
-    recommendedTags = document.getElementsByClassName("recommended-articles");
+    var recommendedTags = document.getElementsByClassName("recommended-articles");
     if(recommendedTags.length > 0) recommendedTags[0].remove();
     
-    //premium-toaster
-    adFooter = document.getElementById("premium-toaster");
-    if(adFooter != null) adFooter.remove();
-    
-
 }
 
 
