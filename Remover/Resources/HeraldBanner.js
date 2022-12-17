@@ -1,69 +1,31 @@
 
-function removeAD(){
-    //top advertise panel.
-    var adPanel = document.getElementById("pd_div");
+function removeElementsByClassName(className){
+    //className
+    allBlocks = document.getElementsByClassName(className);
+    for(var i = allBlocks.length-1; i >= 0 ; i--){
+        allBlocks[i].remove()
+    }
+}
+
+function removeElementById(Id){
+    //Id
+    var adPanel = document.getElementById(Id);
     if(adPanel != null) adPanel.remove();
+}
+
+
+function removeAD(){
     
-    //premium-toaster
-    var adFooter = document.getElementById("premium-toaster");
-    if(adFooter != null) adFooter.remove();
+    var IdList = ["pd_div","premium-toaster"];
+    var ClassNameList = ["ad","ad-video","ad-zone","adsninja-ad-zone", "commenting__paywall","email-boost","frameElement","google-auto-placed","interstitial","recommended-articles"];
     
-    //middle advertise things with 'ad' classname.
-    var allBlocks = document.getElementsByClassName("ad");
-    for(var i = allBlocks.length-1; i >= 0 ; i--){
-        allBlocks[i].remove()
-    }
     
-    //ad-video
-    allBlocks = document.getElementsByClassName("ad-video");
-    for(var i = allBlocks.length-1; i >= 0 ; i--){
-        allBlocks[i].remove()
-    }
+    IdList.forEach(element => removeElementById(element));
     
-    //email-boost
-    allBlocks = document.getElementsByClassName("email-boost");
-    for(var i = allBlocks.length-1; i >= 0 ; i--){
-        allBlocks[i].remove()
-    }
-    
-    //interstitial
-    allBlocks = document.getElementsByClassName("interstitial");
-    for(var i = allBlocks.length-1; i >= 0 ; i--){
-        allBlocks[i].remove()
-    }
-    
-    //commenting__paywall
-    allBlocks = document.getElementsByClassName("commenting__paywall");
-    if(allBlocks != null)
-        for(var i = allBlocks.length-1; i >= 0 ; i--){
-            allBlocks[i].remove()
-        };
-    
-    //ad-zone
-    allBlocks = document.getElementsByClassName("ad-zone");
-    if(allBlocks != null)
-        for(var i = allBlocks.length-1; i >= 0 ; i--){
-            allBlocks[i].remove()
-        };
-    
-    //adsninja-ad-zone
-    allBlocks = document.getElementsByClassName("adsninja-ad-zone");
-    if(allBlocks != null)
-        for(var i = allBlocks.length-1; i >= 0 ; i--){
-            allBlocks[i].remove()
-        };
-    
-    //frameElement
-    allBlocks = document.getElementsByClassName("frameElement");
-    for(var i = allBlocks.length-1; i >= 0 ; i--){
-        allBlocks[i].remove()
-    }
-    
-    //bottom recommended icons.
-    var recommendedTags = document.getElementsByClassName("recommended-articles");
-    if(recommendedTags.length > 0) recommendedTags[0].remove();
+    ClassNameList.forEach(element => removeElementsByClassName(element));
     
 }
+
 
 
 //Site Check algorithm:
