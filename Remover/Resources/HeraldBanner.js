@@ -17,7 +17,7 @@ function removeElementById(Id){
 function removeAD(){
     
     var IdList = ["pd_div","premium-toaster"];
-    var ClassNameList = ["ad","ad-video","ad-zone","adsninja-ad-zone", "commenting__paywall","email-boost","frameElement","google-auto-placed","interstitial","recommended-articles"];
+    var ClassNameList = ["ad","ad-video","ad-zone","adsninja-ad-zone","adsbygoogle", "commenting__paywall","email-boost","frameElement","google-auto-placed","interstitial","recommended-articles"];
     
     
     IdList.forEach(element => removeElementById(element));
